@@ -1,13 +1,21 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import './index.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 
-const App = () => {
+
+function App() {
   return (
-    <div>
-      My Portfolio
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<AboutMe />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<ContactMe />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
