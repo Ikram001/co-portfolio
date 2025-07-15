@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+function Home(){
   return (
     <div className="bg-white text-black"> {/* Background made white here */}
       {/* Hero Section */}
