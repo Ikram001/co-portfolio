@@ -1,3 +1,4 @@
+// src/assets/components/Navbar.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -34,16 +35,36 @@ const Navbar = () => {
           </div>
         </div>
 
+        {/* Updated Icons */}
         <div className="flex items-center gap-4 text-gray-700 dark:text-gray-300">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">🔗</a>
+          {/* LinkedIn Logo */}
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMmLTeTgasqNYDD4VtGG7ghE9NO-nNGGTQoQ&s"
+              alt="LinkedIn"
+              className="w-6 h-6 object-contain rounded-full"
+            />
+          </a>
+
+          {/* Cross Icon */}
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">✖</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">🐙</a>
-          <button
-            onClick={() => document.documentElement.classList.toggle("dark")}
-            title="Toggle Theme"
-          >
-            ☀️ / 🌙
-          </button>
+
+          {/* Custom Icon */}
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"
+            alt="Custom Icon"
+            className="w-6 h-6 object-contain rounded-full"
+          />
+
+          {/* Dark Mode Toggle */}
+<button
+  onClick={() => {
+    document.documentElement.classList.toggle("dark");
+  }}
+  title="Toggle Theme"
+>
+  ☀️
+</button>
         </div>
       </div>
     </nav>
