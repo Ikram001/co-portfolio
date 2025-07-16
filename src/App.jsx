@@ -4,7 +4,8 @@ import Home from "./assets/pages_temp/Home";
 import AboutMe from "./assets/pages_temp/AboutMe";
 import Projects from "./assets/pages_temp/Projects";
 import ContactMe from "./assets/pages_temp/ContactMe";
-import TechStackSection from "./assets/pages_temp/TechStack"; // Import your TechStackSection
+import TechStackSection from "./assets/pages_temp/TechStack"; 
+import Bookshelf from "./assets/pages_temp/Bookshelf";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="contact" element={<ContactMe />} />
           {/* Add the Tech Stack route */}
           <Route path="techstack" element={<TechStackSection />} />
+          <Route path="Bookshelf" element={<Bookshelf />} />
         </Route>
       </Routes>
     </BrowserRouter>
