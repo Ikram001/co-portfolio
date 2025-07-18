@@ -77,6 +77,7 @@ function Navbar() {
           <Link to="/" className="block">Home</Link>
           <Link to="/about" className="block">About</Link>
           <Link to="/projects" className="block">Projects</Link>
+          <Link to="/Notebook" className="block">Notebook</Link>
           <Link to="/contact" className="block">Contact</Link>
           <div className="border-t pt-2">
             <Link to="/bookshelf" className="block">Bookshelf</Link>
