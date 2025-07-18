@@ -2,8 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-black border-t border-gray-800 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 py-8">
+    <footer className="relative overflow-hidden bg-white dark:bg-black border-t border-gray-800 px-4">
+      {/* Gradient background circle */}
+      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 opacity-30 blur-3xl rounded-full pointer-events-none z-0" />
+
+      <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 py-8">
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-serif font-black text-black dark:text-white">[e]</h1>
           <p className="text-gray-600 dark:text-gray-300">Thanks for stopping by</p>
